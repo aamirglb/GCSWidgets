@@ -11,6 +11,7 @@ class Dial;
 class FlapIndicator;
 class FuelIndicator;
 class QGridLayout;
+class SpeedFan;
 
 class Widget : public QWidget
 {
@@ -25,6 +26,7 @@ private:
     Dial            *m_rpmDial;
     FlapIndicator   *m_flap;
     FuelIndicator   *m_fuel;
+    SpeedFan        *m_fan;
 
     QGridLayout     *m_grid{};
 

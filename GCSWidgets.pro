@@ -19,6 +19,7 @@ SOURCES += \
     dial.cpp \
     flapindicator.cpp \
     fuelindicator.cpp \
+    speedfan.cpp \
     main.cpp \
     widget.cpp
 
@@ -26,6 +27,7 @@ HEADERS += \
     dial.h \
     flapindicator.h \
     fuelindicator.h \
+    speedfan.h \
     widget.h
 
 FORMS += \

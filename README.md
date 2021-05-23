@@ -6,7 +6,7 @@ Currently supports following widgets
 2. Fuel Indicator
 3. Flap Indicator (for fixed wing UAV)
 
-![Widgets](widgets.png)
+![Widgets](images/animation.gif)
 
 How to use
 ==========
@@ -14,7 +14,8 @@ Each custom widget is implemented in separate `.cpp` and `.h` file. To use the w
 
 To use Dial widget, copy `dial.cpp` and `dial.h` files.   
 To use Flap widget, copy `flapindicator.cpp` and `flapindicator.h` files.  
-To use Fuel widget, copy `fuelindicator.cpp` and `fuelindicator.h` files.  
+To use Fuel widget, copy `fuelindicator.cpp` and `fuelindicator.h` files.
+To use SpeedFan widget, copy `speedfan.cpp` and `speedfan.h` files.  
 
 This repo contains a test program to demonstrate how to use these widgets.
 
