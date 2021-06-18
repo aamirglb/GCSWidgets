@@ -12,6 +12,7 @@
 #include "fuelindicator.h"
 #include "speedfan.h"
 #include "battery.h"
+#include "winddirdial.h"
 
 Widget::Widget(QWidget *parent)
     : QWidget(parent)
@@ -53,11 +54,15 @@ Widget::Widget(QWidget *parent)
     // Battery
     m_battery = new Battery;
 
+    // Wind direction
+    m_windDir = new WindDirDial;
+
     m_grid->addWidget(m_rpmDial, 0, 0);
     m_grid->addWidget(m_flap,    0, 1);
     m_grid->addWidget(m_fuel,    0, 2);
     m_grid->addWidget(m_fan,     1, 0);
     m_grid->addWidget(m_battery, 1, 1);
+    m_grid->addWidget(m_windDir, 1, 2);
 
     this->setLayout(m_grid);
 
@@ -84,6 +89,8 @@ Widget::Widget(QWidget *parent)
         
         // battery
         m_battery->setValue(static_cast<int32_t>(m_rpm * .1));
+
+        m_windDir->setWindDirection(m_rpm * .4);
 
         if( tick % 10 == 0 ) {
 

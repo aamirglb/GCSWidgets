@@ -13,6 +13,7 @@ class FuelIndicator;
 class QGridLayout;
 class SpeedFan;
 class Battery;
+class WindDirDial;
 
 class Widget : public QWidget
 {
@@ -29,6 +30,7 @@ private:
     FuelIndicator   *m_fuel;
     SpeedFan        *m_fan;
     Battery         *m_battery;
+    WindDirDial     *m_windDir;
 
     QGridLayout     *m_grid{};
 

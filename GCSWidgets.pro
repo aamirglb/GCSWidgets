@@ -22,7 +22,8 @@ SOURCES += \
     fuelindicator.cpp \
     speedfan.cpp \
     main.cpp \
-    widget.cpp
+    widget.cpp \
+    winddirdial.cpp
 
 HEADERS += \
     battery.h \
@@ -30,7 +31,8 @@ HEADERS += \
     flapindicator.h \
     fuelindicator.h \
     speedfan.h \
-    widget.h
+    widget.h \
+    winddirdial.h
 
 FORMS += \
     widget.ui
