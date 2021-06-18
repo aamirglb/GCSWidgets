@@ -12,6 +12,7 @@ class FlapIndicator;
 class FuelIndicator;
 class QGridLayout;
 class SpeedFan;
+class Battery;
 
 class Widget : public QWidget
 {
@@ -27,6 +28,7 @@ private:
     FlapIndicator   *m_flap;
     FuelIndicator   *m_fuel;
     SpeedFan        *m_fan;
+    Battery         *m_battery;
 
     QGridLayout     *m_grid{};
 

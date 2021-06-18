@@ -11,6 +11,7 @@
 #include "flapindicator.h"
 #include "fuelindicator.h"
 #include "speedfan.h"
+#include "battery.h"
 
 Widget::Widget(QWidget *parent)
     : QWidget(parent)
@@ -49,10 +50,15 @@ Widget::Widget(QWidget *parent)
     // SpeedFan
     m_fan = new SpeedFan;
 
+    // Battery
+    m_battery = new Battery;
+
     m_grid->addWidget(m_rpmDial, 0, 0);
     m_grid->addWidget(m_flap,    0, 1);
     m_grid->addWidget(m_fuel,    0, 2);
     m_grid->addWidget(m_fan,     1, 0);
+    m_grid->addWidget(m_battery, 1, 1);
+
     this->setLayout(m_grid);
 
     QTimer *timer = new QTimer;
@@ -74,8 +80,11 @@ Widget::Widget(QWidget *parent)
         m_fuel->setFuel(m_rpm * .1);
 
         // fan
-        m_fan->setSpeed(m_rpm * .1);
+        m_fan->setSpeed(static_cast<int32_t>(m_rpm * .1));
         
+        // battery
+        m_battery->setValue(static_cast<int32_t>(m_rpm * .1));
+
         if( tick % 10 == 0 ) {
 
             if(m_flapValue > 20)

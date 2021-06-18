@@ -16,6 +16,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    battery.cpp \
     dial.cpp \
     flapindicator.cpp \
     fuelindicator.cpp \
@@ -24,6 +25,7 @@ SOURCES += \
     widget.cpp
 
 HEADERS += \
+    battery.h \
     dial.h \
     flapindicator.h \
     fuelindicator.h \
