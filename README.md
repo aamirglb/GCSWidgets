@@ -8,6 +8,8 @@ Currently supports following widgets
 
 ![Widgets](images/animation.gif)
 
+![Widgets](images/widgets2.png)
+
 How to use
 ==========
 Each custom widget is implemented in separate `.cpp` and `.h` file. To use the widget copy the corresponding `.cpp` and `.h` file into your project. You can either create the widget dynamically or through Qt designer form.
