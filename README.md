@@ -5,9 +5,11 @@ Currently supports following widgets
 1. Dial (for Engine or Rotor RPM)
 2. Fuel Indicator
 3. Flap Indicator (for fixed wing UAV)
+4. Wind Speed Indicator
+5. Wind Direction Indicator
+6. Battery Indicator
 
 ![Widgets](images/animation.gif)
-
 
 How to use
 ==========
