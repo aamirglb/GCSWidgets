@@ -8,7 +8,6 @@ Currently supports following widgets
 
 ![Widgets](images/animation.gif)
 
-![Widgets](images/widgets2.png)
 
 How to use
 ==========
