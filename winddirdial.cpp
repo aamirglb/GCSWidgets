@@ -1,4 +1,5 @@
 #include "winddirdial.h"
+#include <QPainterPath>
 #include <QPainter>
 #include <cmath>
 #include <QTimer>

@@ -1,5 +1,6 @@
 #include "flapindicator.h"
 #include <QPainter>
+#include <QPainterPath>
 
 FlapIndicator::FlapIndicator(QWidget *parent) : QWidget(parent)
 {

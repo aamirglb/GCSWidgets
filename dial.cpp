@@ -1,5 +1,6 @@
 #include "dial.h"
 
+#include <QPainterPath>
 #include <QPainter>
 #include <cmath>
 #include <QDebug>
