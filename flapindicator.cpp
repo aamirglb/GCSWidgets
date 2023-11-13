@@ -69,9 +69,9 @@ void FlapIndicator::paintEvent(QPaintEvent * /* event */)
     QPen thickPen(Qt::white, 4);
     QPen thinPen(Qt::white, 0.5);
 
-    QColor niceBlue(150, 150, 200);
+//    QColor niceBlue(150, 150, 200);
     painter.setPen(thickPen);
-    painter.setBrush(palette().foreground());
+    painter.setBrush(palette().windowText());
 
     painter.save();
     painter.translate(-20, 0);

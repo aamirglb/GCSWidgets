@@ -22,8 +22,7 @@ Widget::Widget(QWidget *parent)
 
     // set background color
     QPalette pal = palette();
-    pal.setColor(QPalette::Background, QColor(25, 35, 45));
-//    pal.setColor(QPalette::Foreground, QColor(15, 15, 15));
+    pal.setColor(QPalette::Window, QColor(25, 35, 45));
     this->setAutoFillBackground(true);
     this->setPalette(pal);
 
@@ -105,7 +104,6 @@ Widget::Widget(QWidget *parent)
     });
 
     timer->start();
-
 }
 
 Widget::~Widget()
